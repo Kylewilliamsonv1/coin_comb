@@ -8,6 +8,10 @@ class Coin
     @amount = amount
   end
 
+  def big_brush
+    self.quarter_comb.dime_comb.nickel_comb.penny_comb
+  end
+
   def quarter_comb
     @quarter = @amount / 25
     @amount = @amount % 25
@@ -23,7 +27,7 @@ class Coin
     @amount = @amount % 5
   end
   
-  def penny_comb()
+  def penny_comb
     @penny = @amount / 1
     @amount = @amount % 1
   end
