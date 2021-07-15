@@ -45,10 +45,10 @@ describe('#coins_combs') do
   end
   it("tells you what your change is") do
     coins =Coin.new(94)
-    coins.quarter_comb
-    coins.dime_comb
-    coins.nickel_comb
-    coins.penny_comb
+    coins.big_brush
     expect(coins.penny).to(eq(4))
+    expect(coins.nickel).to(eq(1))
+    expect(coins.dime).to(eq(1))
+    expect(coins.quarter).to(eq(3))
   end
 end
